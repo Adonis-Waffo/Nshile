@@ -41,7 +41,13 @@ Ce projet est divisé en deux steps principaux:
 
 -> LE BACKEND PYTHON
 
+Basé sur une application Web streamLit, le backend doit permettre de set les mots clés (nom de personnalité à analyser), set la liste des pages facebook a scrapper
 
+un script APPIFY nous permettra de scrapper les données sur chacune des pages qui ont été set plus haut.
+
+une fois les données optenue et nettoyée, elle doivent ensuite être analysée par une modèle IA qui pour chaque phrase, va préciser la polarité, l'emotion et la tonalité de la phrase puis préciser le seujet (personnalité concerné par la phrase).
+
+Une fois ces données analysée par le modèle, les données seront stockée dans un entrepot de données sour SQL Server grace a des Job Talend pour être consommés par le dashboard par la suite
 
 
 -> LE DASHBOARD POWERBI
